@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/perfildelusuario.css">
+    <title>Perfíl</title>
+</head>
+<body>
+    <section class="mini-banner">
+        <div class="nav-bar">
+
+            <div class="nav-logo"><img src="img/Logo.png"></a>
+            </div>
+
+            <div class="nav-links" id="nav-links">
+                <ul>
+                    <a href="#"><li>Jane Doe</li></a>
+                    <i class="fas fa-user-circle"></i>
+                </ul>
+            </div>
+        </div>
+        <div class="mini-banner-title">
+            <h2>Perfil del <span>usuario</span></h2>
+        </div> 
+    </section>
+
+    <main>
+        <section id="perfil">
+            <div class="datos">
+                <div style="text-align:center">
+                  <h2>Datos personales</h2>
+                </div>
+                <hr>
+                    <div class="informacionpersonal">
+                        <form action="/action_page.php">
+                            <br>
+                            <p> ID del usuario: 1 - 2345 - 6789 </p>
+                            <br>
+                            <p> ID de la vivienda: 12345 </p>
+                            <br>
+                            <p> Estado actual: Coordinador(a)</p>
+                            <br>
+                            <i class="fas fa-user-circle"></i>
+                            <br>
+                            <br>
+                            <label for="ffotoeditar">Editar foto de perfil</label>
+                            <br>
+                            <label for="ffotosubir">Subir foto de perfil</label>
+                            <br>
+                            <br>
+                            <label for="fname">Nombre</label>
+                            <input type="text" id="Rnombre" name="nombre" placeholder="Nombre" required>
+
+                            <label for="lname">Primer apellido</label>
+                            <input type="text" id="Rprimerapellido" name="primerapellido" placeholder="Primer apellido" required>
+
+                            <label for="lname">Segundo apellido</label>
+                            <input type="text" id="Rsegundoapellido" name="segundoapellido" placeholder="Segundo apellido">
+
+                            <label for="lname">Teléfono</label>
+                            <input type="text" id="Rtelefono" name="telefono" placeholder="Telefono" required>
+
+                            <label for="lname">Correo electrónico</label>
+                            <input type="text" id="Rcorreo" name="correo" placeholder="Correo electronico" required>
+
+                            <label for="lname">Contraseña</label>
+                            <input type="password" id="Rcontraseña" name="Contraseña" placeholder="Contraseña" required>
+
+                            <label for="lname">Confirmar contraseña</label>
+                            <input type="password" id="Rconfirmarcontraseña" name="CContraseña" placeholder="Confirmar contraseña" required>
+                            <br>
+                            <br>
+                            <label for="lname">Contacto de emergencia</label>
+                            <input type="text" id="Rcontacto" name="contacto" placeholder="Contacto de emergencia" required>
+                            
+                            <label for="lname">Parentesco con el contacto de emergencia</label>
+                            <input type="text" id="Rparentesco" name="parentesco" placeholder="Parentesco con el contacto de emergencia" required>
+
+                            <label for="lname">Teléfono de contacto de emergencia</label>
+                            <input type="text" id="Rtelefonoparentesco" name="telefonoparentesco" placeholder="Telefono de contacto de emergencia" required>
+                            <label for="country">País</label>
+                            <select id="Rpais" name="pais">
+                                <option value="Costa Rica">Costa Rica</option>
+                            </select>
+                            <label for="subject">Dirección</label>
+                            <textarea id="Rdireccion" name="direccion" placeholder="Direccion exacta" style="height:138px" required></textarea>
+                            <input type="button" id="botondeguardar" value="Guardar" class="button">
+                        </form>
+                    </div>
+                    <div class="row">
+                        <div class="informacionpersonal">
+                            <img src='./img/janedoe2.jpeg'>
+                        </div>
+                    </div>
+              </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="fcontainer">
+            <div class="foot-box">
+                <h2 class="head">Roomi</h2>
+                <a class="hvr-underline-from-center" href="../Info/nosotros.html">Sobre nosotros</a>
+                <a class="hvr-underline-from-center" href="../Info/contacto.html">Contacto</a>
+                <a class="hvr-underline-from-center" href="../Info/Fall.html">Conoce al equipo</a>
+                <a class="hvr-underline-from-center" href="../Info/faq.HTML">FAQ</a>
+
+                <a>Redes sociales</a>
+                <div class="social">
+                    <i href class="fab fa-facebook-square "></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-twitter-square"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <a class="copy">©2020 Roomi</a>
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/280d515c63.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="./js/perfildelusuario.js"></script>
+</body>
+</html>
+

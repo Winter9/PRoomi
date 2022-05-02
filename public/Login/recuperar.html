@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="css/recuperar.css">
+    <title>Recuperar Contraseña</title>
+</head>
+<body>
+    <header class="logo">
+        <a href="/">
+            <img src="img/Logo.png" alt="" width="180" height="80">
+        </a>
+    </header>
+    <form class="formulario">
+        <h1>Olvidaste tu contraseña</h1>
+
+        <p>Por favor ingrese el correo electrónico con el que se registró y haga clic en "Enviar contraseña" para recibir un correo con una contraseña temporal.</p>
+        <div class="contenedor">
+            <div class="input-contenedor">
+                <i class="fas fa-envelope icon"></i>
+                <input type="email" id="txt-correo" placeholder="Correo electrónico" required>
+            </div>
+
+            <input type="submit" id="btn_recuperar" value="Enviar contraseña" class="button"><br>
+            <input type="submit" value="Cancelar" class="button">
+            
+            
+        </div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="js/recuperar.js"></script>
+</body>
+
+
+
+</html>

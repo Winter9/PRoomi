@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    font-size: calc(0.6em + 1vw);
+    scroll-behavior: smooth;
+}
+
+.mini-banner{
+    height: 35vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)), url(../img/Casa6.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.nav-bar{
+    display: flex;
+    padding: 10px 90px;
+}
+
+.nav-logo img{
+    width: 200px;
+}
+
+.nav-links{
+    flex: 1;
+}
+
+.nav-links ul{
+    margin-left: 20px;
+    display: inline;
+    float: right;
+    margin-top: 23px;
+}
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    padding: 25px 20px;
+}
+
+.nav-links ul a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #FEDD00;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.nav-links ul i{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.mini-banner-title{
+    margin: 1% 15%;
+    color: #fff;
+}
+
+.mini-banner-title h2{
+    font-weight: bold;
+    font-size: 50px;
+    margin-left: 19vw;
+}
+
+.mini-banner-title span{
+    color: #FEDD00;
+}
+
+.navbar-brand img{
+    max-width: 200px;
+}
+
+/*Navbar Roomi fin*/
+
+/*Tabla viviendas inicio*/
+
+#botoneditar{
+    background-color: #60B6FB; 
+    color: white;
+    padding: 12px 20px;
+    border-color: #051839;
+    cursor: pointer;
+}
+  
+#botoneditar :hover{
+    background-color: #60B6FB;
+}
+
+.tablaviviendas{
+    background-color: #A2D6F9;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#buscarvivienda {
+    background-repeat: no-repeat;
+    width: 20%;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 67%;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #000000;
+    margin-bottom: 12px; /* Add some space below the input */
+  }
+  
+#tablav {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #1360E2;
+    font-size: 15px;
+}
+  
+#tablav th, #tablav td {
+    text-align: left; /* Left-align text */
+    padding: 12px; /* Add padding */
+    text-align: center;
+}
+  
+#tablav tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid #60B6FB;
+}
+  
+#tablav tr.header{
+    background-color: #1360E2;
+}
+
+#tablav tr:hover {
+    background-color: #60B6FB;
+}
+
+#tablav th, #tablav td {
+    width: 80px;
+    text-align: center;
+    border: 1px solid #E0E0E0;
+}
+#tablav th:first-child, #tablav td:first-child {
+    width: 180px;
+}
+#tablav thead {
+    display: block;
+}
+#tablav tbody {
+    display: block;
+    height: 212px;
+    overflow: auto;
+}
+
+/*tabla viviendas fin*/
+
+/*datosdevivienda inicio*/
+
+.datosdevivienda{
+    background-color: #A2D6F9;
+    padding-top: 25px;
+    padding-bottom: 20px; 
+    max-width: 100%;
+    width: 100%;
+    text-align: justify;
+    clear: both;
+    display: inline-block;
+}
+
+.datosdevivienda h1{
+    font-size: 20px;
+    margin-bottom: 5px;
+    max-width: 45%;
+    width: 45%;
+}
+
+.datosdevivienda p{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.datosdevivienda .seccionder{
+    max-width: 45%;
+    width: 45%;
+    float: right;
+}
+
+.datosdevivienda .seccionizq{
+    padding-left: 15px;
+    max-width: 45%;
+    width: 45%;
+    float: left;
+}
+
+
+/*datosdevivienda fin*/
+
+/*graficosviviendas inicio*/
+
+.graficosviviendas{
+    background-color: #fff;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    max-width: 100%;
+    width: 100%;
+    clear: both;
+    display: inline-block;
+}
+
+.graficosviviendas h1{
+    color: #1360E2;
+    text-align: center;
+}
+
+#piecharttareas{
+    max-width: 50%;
+    width: 50%;
+    float: right;
+}
+
+#piechartcompras{
+    max-width: 50%;
+    width: 50%;
+    float: left;
+}
+
+/*graficosviviendas fin*/
+
+/*Footer*/
+
+.footer{
+    background-color: #051839;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%23fffbeb' fill-opacity='0.4'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+
+.footer .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0 20px 0;
+
+}
+
+.footer .container .foot-box{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer .head{
+    color: #FFFBEB ;
+    font-size: 1.9em;
+    margin-bottom: 0.9rem;
+
+}
+
+.footer a{
+    color: #FFFBEB;
+    text-decoration: none;
+    font-size: 0.8em;
+    margin-bottom: 0.2rem;
+}
+
+.footer a:hover{
+    color: #FEDD00;
+    transition: 0.2s;
+}
+
+.footer .fab{
+    font-size: 1.6em;
+    color: #FFFBEB;
+    cursor: pointer;
+}
+
+.footer .copy{
+    font-size: 0.5em;
+    margin-top: 1rem;
+}
+
+.footer .fab:hover{
+    color: #FEDD00;
+    transition: 0.6s;
+}
+
+.footer .head:hover{
+    color: #FEDD00;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+/*Footer*/
+
+.k{
+    Color: #051839
+    #1360E2
+    #60B6FB
+    #A2D6F9
+    #CFE57D
+    #FEDD00
+    #FFC600
+    #FFFBEB;
+}

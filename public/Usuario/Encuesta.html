@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Encuesta de evaluacion</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/encuesta.css">
+</head>
+<body>
+    <section class="mini-banner">
+        <div class="nav-bar">
+
+            <div class="nav-logo">
+                <img src="img/logo.png" alt="#">
+            </div>
+
+            <div class="nav-links" id="nav-links">
+                <ul>
+                    <a href="#"><li>Registrate</li></a>
+                    <a href="#"><li>Iniciar sesion</li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="mini-banner-title">
+            <h2>Encuesta de <span>evaluación</span></h2>
+        </div> 
+    </section>
+
+    <section class="encuesta">
+        <div class="container">
+            <h4 class="head">Su opinión es muy importante para nosotros. Por favor conteste las siguientes preguntas para ayudarnos a mejorar</h4>
+            <div class="encuesta-box">
+                <div class="en1">
+                    <label for="">Ingrese su nombre</label>
+                    <input type="text" id="txt-nombre" required>
+                    <label for="">Ingrese nombre de persona a evaluar</label>
+                    <input type="text" id="txt-nombre2" required>
+                </div>
+
+                <h5>Muestra respeto y no entorpece la convivencia</h5>
+                <div class="pregs">
+                    <span class="radiocontainer">
+                        <label for="" class="radiolabel">De acuerdo</label>
+                        <input class="selector" id="radio1" name="Pregunta1" type="radio" value="1" >
+                        <label for="" class="radiolabel">Neutral</label>
+                        <input class="selector" id="radio1" name="Pregunta1" type="radio" value="2" >
+                        <label for="" class="radiolabel">En desacuerdo</label>
+                        <input class="selector" id="radio1" name="Pregunta1" type="radio" value="3" >
+                    </span>
+                </div>
+                <h5>Cumple las reglas del hogar</h5>
+                <div class="pregs">
+                    <span class="radiocontainer">
+                        <label for="" class="radiolabel">De acuerdo</label>
+                        <input class="selector" id="" name="Pregunta2" type="radio" value="1">
+                        <label for="" class="radiolabel">Neutral</label>
+                        <input class="selector" id="" name="Pregunta2" type="radio" value="2">
+                        <label for="" class="radiolabel">En desacuerdo</label>
+                        <input class="selector" id="" name="Pregunta2" type="radio" value="3">
+                    </span>
+                </div>
+                <h5>Es responsable con las tareas del hogar</h5>
+                <div class="pregs">
+                    <span class="radiocontainer">
+                        <label for="" class="radiolabel">De acuerdo</label>
+                        <input class="selector" id="" name="Pregunta3" type="radio" value="1">
+                        <label for="" class="radiolabel">Neutral</label>
+                        <input class="selector" id="" name="Pregunta3" type="radio" value="2">
+                        <label for="" class="radiolabel">En desacuerdo</label>
+                        <input class="selector" id="" name="Pregunta3" type="radio" value="3">
+                    </span>
+                </div>
+                <h5>Mantiene una buena higiene</h5>
+                <div class="pregs">
+                    <span class="radiocontainer">
+                        <label for="" class="radiolabel">De acuerdo</label>
+                        <input class="selector" id="" name="Pregunta4" type="radio" value="1">
+                        <label for="" class="radiolabel">Neutral</label>
+                        <input class="selector" id="" name="Pregunta4" type="radio" value="2">
+                        <label for="" class="radiolabel">En desacuerdo</label>
+                        <input class="selector" id="" name="Pregunta4" type="radio" value="3">
+                    </span>
+                </div>
+                <button class="btn hvr-shutter-out-horizontal" id="btn-enviar" type="button">Enviar</button>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="js/encuesta.js"></script>
+</body>
+
+<footer class="footer">
+    <div class="container">
+        <div class="foot-box">
+            <h2 class="head">Roomi</h2>
+            <a class="hvr-underline-from-center" href="">Sobre nosotros</a>
+            <a class="hvr-underline-from-center" href="">Contacto</a>
+            <a class="hvr-underline-from-center" onclick="document.location ='./faq.HTML'">Conoce al equipo</a>
+            <a class="hvr-underline-from-center" href="">FAQ</a>
+
+            <a>Redes sociales</a>
+            <div class="social">
+                <i class="fab fa-facebook-square "></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+            <a class="copy">©2020 Roomi</a>
+        </div>
+
+    </div>
+
+</footer>
+</html>

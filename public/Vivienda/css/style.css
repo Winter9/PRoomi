@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFBEB;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+section{
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+    padding: 1 1rem;
+}
+
+h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+p{
+    font-size: 2rem;
+}
+
+
+.chat-btn{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background-color: #1360E2;
+    color: #60B6FB;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.4);
+}
+
+.chat-btn:hover, .submit:hover, #emoji-btn:hover{
+    opacity: 1;
+}
+
+.chat-popup{
+    display: none; /*Esto hace que no se muestre al chat a menos que sea invocado presionando el boton de chat*/
+    position: fixed;
+    bottom: 80px;
+    right: 120px;
+    height: 400px;
+    width: 300px;
+    background-color: #ffffff;
+    /*display: flex;*/ /*Display flex cancela al none, por lo cual este quedara comentado hasta que se valide en el .js para poder intermitentemente hacerlo funcionar*/
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.75rem;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+    border-radius: 10px;
+}
+
+.show{
+    display: flex; /*Sera util en el .js para mostrar o esconder el chat cuando sea debido*/
+}
+
+.chat-area{
+    height: 80%;
+    overflow-y: auto;
+    overflow-x: hidden; /*El texto se scrollea para abajo no para la derecha*/
+}
+
+.income-msg{
+    display: flex;
+    align-items: center;
+}
+
+.avatar{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover; /*Este valor hara que la foto estirada quepa y se acondicione a su tamano*/
+}
+
+.income-msg .msg{
+    background-color: #FEDD00;
+    color: #000;
+    padding: 0.5rem;
+    border-radius: 25px;
+    margin-left: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
+.badge{ /*El badge es el iconito rojo que indica que hay un nuevo mensaje o mensajes pendientes*/
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #E11444;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; /*Display, justify content y align itemns hacen que el numero 1 quede dentro de la esfera roja apropiadamente*/
+    top: -10px;
+    right: -10px; /*top y right lograron que la esfera roja se coloque en el borde derecho superior del chat*/
+}
+
+.input-area{
+    position: relative; /*Agregar el emoji dentro de la barra donde se escribe el texto, y NO afuera*/
+    display: flex;
+    justify-content: center;
+}
+
+input[type="text"]{ /*con el contexto dentro de [] se indica que es especificamente el tipo texto*/
+    width: 100%;
+    border: 1px solid #000;
+    font-size: 1rem;
+    border-radius: 5px;
+    height: 2.2rem;
+}
+
+#emoji-btn{
+    position: absolute;
+    font-size: 1.2rem;
+    background-color: transparent;
+    right: 50px;
+    top: 2px;
+    opacity: 0.5;
+}
+
+.submit{
+    padding: 0.25rem 0.5rem; 
+    margin-left: 0.5rem;
+    background-color: #FFC600;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    opacity: 0.7;
+}
+
+.out-msg{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.my-msg{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.75rem;
+    padding: 00.5rem;
+    background-color: #60B6FB;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+    word-break: break-all; /*Esta propiedad permite que el texto se quiebre y se oriente hacia abajo para que no siga interminablemente a la derecha sin poder leerse*/
+}
+
+
+@media (max-width:500px){ /*Esto le da una dimension para considerar pantallas mas pequenas, que sea reponsivo*/
+
+    .chat-popup{
+        bottom: 120px;
+        right:10%;
+        width: 80vw;
+    }
+}

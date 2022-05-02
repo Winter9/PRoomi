@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registrar vivienda</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/registrar-vivienda.css">
+</head>
+<body>
+    <section class="mini-banner">
+        <div class="nav-bar">
+
+            <div class="nav-logo"><img src="img/Logo.png"></a>
+            </div>
+
+            <div class="nav-links" id="nav-links">
+                <ul>
+                    <a href="../Login/registrar.html"><li>Regístrate</li></a>
+                    <a href="../Login/iniciar.html"><li>Iniciar sesión</li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="mini-banner-title">
+            <h2>Registro de <span>vivienda</span></h2>
+        </div> 
+    </section>
+    <main>
+        <form>
+            <section class="informacionpersonal">
+                <div>
+                    <div class="datoseditables">
+                            <label for="fname">Título de la vivienda</label>
+                            <br>
+                            <input type="text" id="Rtitulov" name="Títulovivienda" placeholder="Titulo de la vivienda" required>
+                            <br>
+                            <br>
+                            <label for="lname">Localización vivienda</label>
+                            <br>
+                            <input type="text" id="Rubicacionv" name="Ubicaciónvivienda" placeholder="Ubicacion de la vivienda" required>
+                            <br>
+                            <br>
+                            <label for="cuartos">Cantidad de cuartos</label>
+                            <br>
+                                <select id="Rcuartos" name="Cuartos" required>
+                                    <option value="">--Seleccione una opcion--</option>
+                                    <option value="1">1 cuarto</option>
+                                    <option value="2">2 cuartos</option>
+                                    <option value="3">3 cuartos</option>
+                                    <option value="4">4 cuartos</option>
+                                    <option value="5">5 cuartos</option>
+                                    <option value="+5">+5 cuartos</option>
+                                </select>
+                            <br>
+                            <br>
+                            <label for="subject" class="caja">Descripción de la vivienda</label>
+                            <br>
+                            <textarea id="Rdescripcionv" name="Descripciónvivienda" placeholder="Descripción de la vivienda" style="height:100px; width:600px" required></textarea>
+                            <br>
+                            <img id="foto-vivienda" class="foto-vivienda">
+                            <br>
+                            <button type="button" id="btn-foto-vivienda" class="btn-agregar">Agregar Foto</button>
+                    </div>
+                </div>
+
+                <h1>Ubica tu vivienda en el mapa</h1>
+
+                <title>Google Maps</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+                <meta charset="utf-8"/>
+                <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+                <script>
+                var map;
+                function initialize() {
+                    var mapOptions = {
+                    zoom: 8,
+                    center: new google.maps.LatLng(10.00236, -84.11651),
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                    };
+                    map = new google.maps.Map(document.getElementById('map_canvas'),
+                        mapOptions);
+                }
+        
+                google.maps.event.addDomListener(window, 'load', initialize);
+                </script>
+                
+                <div id="map_canvas"></div>
+
+            </section>
+
+            <section id="reglamento">
+                <div class="reglas">
+                    <h1>Reglamento</h1>
+                    <br>
+                    <fieldset id="reglas-checkbox">
+                    <label class="container">Se aceptan mascotas.
+                        <input type="checkbox" value="Se aceptan mascotas">
+                        <span class="checkmark"></span>
+                    </label>
+                            
+                    <label class="container">Se aceptan niños.
+                        <input type="checkbox" value="Se aceptan niños">
+                        <span class="checkmark"></span>
+                    </label>
+                            
+                    <label class="container">Amigable con 4:20.
+                        <input type="checkbox" value="420 Friendly" >
+                        <span class="checkmark"></span>
+                    </label>
+                            
+                    <label class="container">Amigable con comunidad LGTB+.
+                        <input type="checkbox" value="LGTB Friendly" >
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container">Ruido hasta las 10pm.
+                        <input type="checkbox" value="Ruido hasta 10pm" >
+                        <span class="checkmark"></span>
+                    </label>
+                            
+                            
+                    <label class="container">No se permiten pintar las paredes o alterar la decoración residencial.
+                        <input type="checkbox" value="No se permite modificaciones a propiedad" >
+                        <span class="checkmark"></span>
+                    </label>
+                                
+                            
+                                
+                    <label class="container">Invitados pueden quedarse a dormir mas de una noche.
+                        <input type="checkbox" value="Invitados pueden quedarse a dormir" >
+                        <span class="checkmark"></span>
+                    </label>
+                                
+                    <label class="container">No se admiten roomies desaseados.
+                        <input type="checkbox" value="No se aceptan Roomies desaseados" >
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                    <br>
+
+                    <label for="subject" class="caja">Reglas adicionales</label>
+                    <br>
+                    <br>
+                    <textarea id="Rregla" name="reglasadicionales" placeholder="Reglas adicionales" style="height:100px; width:600px"></textarea>
+                    <br>
+                    <button type="button" id="botonguardar" class="button">Registrar</button>
+                
+                </div>
+
+                <div class="row">
+                    <img src='./img/casa5.jpeg'style="height:68%; width:85%">
+                </div>
+                <br>
+
+            </section>
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="fcontainer">
+            <div class="foot-box">
+                <h2 class="head">Roomi</h2>
+                <a class="hvr-underline-from-center" href="../Info/nosotros.html">Sobre nosotros</a>
+                <a class="hvr-underline-from-center" href="../Info/contacto.html">Contacto</a>
+                <a class="hvr-underline-from-center" href="../Info/Fall.html">Conoce al equipo</a>
+                <a class="hvr-underline-from-center" href="../Info/faq.HTML">FAQ</a>
+
+                <a>Redes sociales</a>
+                <div class="social">
+                    <i href class="fab fa-facebook-square "></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-twitter-square"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <a class="copy">©2020 Roomi</a>
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="js/servicio-viviendas.js"></script>
+    <script src="js/servicio-vivienda-imagen.js"></script>
+    <script src="js/registrar-vivienda.js"></script>
+</body>
+</html>

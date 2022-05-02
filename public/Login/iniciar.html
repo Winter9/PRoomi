@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="css/iniciar.css">
+    <title>Iniciar Sesión</title>
+</head>
+<body>
+    <header class="logo">
+        <a href="/">
+            <img src="img/Logo.png" alt="" width="180" height="60">
+        </a>
+        <nav>
+            <a href="recuperar.html">Recuperar contraseña</a>
+            <a href="registrar.html">Regístrate</a>
+        </nav>
+    </header>
+  
+    <div class="form-ini">
+        <h2>Iniciar sesion</h2>
+        <input class="swal2-input" type="email" id="txt-correo">
+        <input class="swal2-input" type="password" id="txt-contrasenna">
+        <button class="btn-ini" id="btn_iniciar" >Iniciar sesion</button>
+    </div>
+    
+    
+    <!-- Scripts de terceros -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    
+    <!-- Scripts propios -->
+    <script src="js/servicio-usuarios.js"></script>
+    <script src="js/iniciar.js"></script>
+    
+</body>
+</html>

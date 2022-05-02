@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Roomi</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <section class="banner">
+            <div class="nav-bar">
+
+                <div class="nav-logo">
+                    <img src="img/logo.png" alt="#">
+                </div>
+
+                <div class="nav-links" id="nav-links">
+                    <i class="far fa-window-close" onclick="closeMenu()"></i>
+                    <ul>
+                        <a href="../Login/registrar.html"><li>Regístrate</li></a>
+                        <a href="../Login/iniciar.html"><li>Iniciar sesión</li></a>
+                    </ul>
+                </div>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+            </div>
+            <div class="banner-title">
+                <h1>Encuentra <span>roommates</span></h1>
+                <h2>Renta tu <span>vivienda</span></h2>
+                <button type="button" class="btn hvr-shutter-out-horizontal" onclick="document.location ='../Login/registrar.html'">Empieza ahora</button>
+            </div> 
+        </section>
+        
+        <section class="se-parte">
+            <h2 class="head">Se parte de Roomi</h2>
+            <div class="container">
+                <div class="se-parte-box bgse1 hvr-grow-shadow">
+                    <div>
+                        <h4>Busca un hogar y se un Roomi</h4>
+                        <p>Busca un hogar donde tener 'Roomis', prueba vivir con tus amigos o encuentra gente nueva para reducir gastos en tu nuevo hogar.</p>
+                        <button type="button" class="btn hvr-radial-out" onclick="document.location ='../vivienda/viviendas.html'">Encuentra una vivienda</button>
+
+                    </div>
+                </div>
+                <div class="se-parte-box bgse2 hvr-grow-shadow">
+                    <div>
+                        <h4>Busca roommates para tu vivienda</h4>
+                        <p>Si tienes una vivienda y quieres tener 'Roomis',postula tu vivienda para que otros 'Roomis' puedan encontrarla</p>
+                        <button type="button" class="btn hvr-radial-out" onclick="document.location ='../Login/registrar.html'">Postula tu vivienda</button>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sobre-nos">
+            <h1>Sobre nosotros</h1>
+            <div class="container2">
+                <div class="sobre-nos-box">
+                    <form>
+
+                        <ul>
+                            <li>Compromiso</li>
+                            <li>Seguridad</li>
+                            <li>Calidad</li>
+                        </ul>
+                    </form>
+                </div>
+                <div class="sobre-nos-box">
+                    <button type="button" class="btn hvr-grow-rotate hvr-bounce-to-right" onclick="document.location ='./nosotros.html'">Descubre más</button>
+                </div>
+            </div> 
+        </section>
+
+        <section class="reviews">
+            <h2>Reviews de nuestros usuarios</h2>
+            <div class="container3">
+                <div class="review-box hvr-reveal hvr-float">
+                    <div>
+                        <i class="far fa-user"></i>
+                        <h5>Antonio</h5>
+                        <p>Excelente aplicacion!, pude encontrar un hogar en el lugar que necesitaba.</p>
+                    </div>    
+                </div>
+                <div class="review-box hvr-reveal hvr-float">
+                    <div>
+                        <i class="far fa-user"></i>
+                        <h5>Emmanuel</h5>
+                        <p>Genial, encontré unos compañeros de vivienda excepcionales. </p>
+                    </div>    
+                </div>
+                <div class="review-box hvr-reveal hvr-float">
+                    <div>
+                        <i class="far fa-user"></i>
+                        <h5>Amanda</h5>
+                        <p>Encontré gente para que viviese en mi vivienda, 10/10 recomendaría la app.</p>
+                    </div>    
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script>
+        const show = document.getElementById("nav-links");
+        const showMenu = () =>{
+            show.style.right = "0";
+
+        }
+        const closeMenu = () =>{
+            show.style.right = "-200px";
+        }
+    </script>
+</body>
+<footer class="footer">
+    <div class="container">
+        <div class="foot-box">
+            <h2 class="head">Roomi</h2>
+            <a class="hvr-underline-from-center" href="./nosotros.html">Sobre nosotros</a>
+            <a class="hvr-underline-from-center" href="./contacto.html">Contacto</a>
+            <a class="hvr-underline-from-center" href="./Fall.HTML">Conoce al equipo</a>
+            <a class="hvr-underline-from-center" href="./faq.HTML">FAQ</a>
+
+
+            <a>Redes Sociales</a>
+            <div class="social">
+                <i class="fab fa-facebook-square "></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+            <a class="copy">©2020 Roomi</a>
+        </div>
+
+    </div>
+
+</footer>
+</html>

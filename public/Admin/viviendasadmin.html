@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/viviendasadmin.css">
+    <title>Viviendas de Roomies</title>
+
+</head>
+<body>
+
+    <section class="mini-banner">
+        <div class="nav-bar">
+
+            <div class="nav-logo"><img src="img/Logo.png"></a>
+            </div>
+
+            <div class="nav-links" id="nav-links">
+                <ul>
+                    <a href="#"><li>Administrador</li></a>
+                    <i class="fas fa-user-circle"></i>
+                </ul>
+            </div>
+        </div>
+        <div class="mini-banner-title">
+            <h2>Viviendas de <span>Roomies</span></h2>
+        </div> 
+    </section>
+
+    <section class="tablaviviendas">
+
+        <input type="text" id="buscarvivienda" onkeyup="myFunction()" placeholder="Buscar vivienda">
+
+        <input type="button" id="botoneditar" value="Editar" class="button">
+        <br>
+        <br>
+        <table id="tablav">
+        <tr class="header">
+            <th style="width:10%;">ID de la vivienda</th>
+            <th style="width:80%;">Titulo</th>
+            <th style="width:10%;">Coordinador</th>
+        </tr>
+        <tr>
+            <td>V01</td>
+            <td>Casa con hermosa vista al valle central.</td>
+            <td>Jane Doe</td>
+        </tr>
+        <tr>
+            <td>V02</td>
+            <td>Casa en zona rural de Barva, con todos los servicios.</td>
+            <td>John Doe</td>
+        </tr>
+        <tr>
+            <td>V03</td>
+            <td>Hermosa casa en las afueras de la GAM.</td>
+            <td>Ramon Doe</td>
+        </tr>
+        <tr>
+            <td>V04</td>
+            <td>Casita con vista a playa en Manzanillo.</td>
+            <td>Donna Doe</td>
+        </tr>
+        <tr>
+            <td>V05</td>
+            <td>Vivienda rustica en el corazon de San Pedro de mOntes de oca.</td>
+            <td>Marina Doe</td>
+        </tr>
+        <tr>
+            <td>V06</td>
+            <td>Apartamento vintage con 5 cuartos en Santa Barbara de Heredia.</td>
+            <td>Betty Doe</td>
+        </tr>
+        <tr>
+            <td>V07</td>
+            <td>Elegante casa ubicada a 2 km del TEC de Cartago.</td>
+            <td>Armando Doe</td>
+        </tr>
+        <tr>
+            <td>V08</td>
+            <td>Casa totalmente equipada en San Pedro, al costado de la Calle de la Amargura.</td>
+            <td>Vikrom Doe</td>
+        </tr>
+        </table>
+
+    </section>
+
+    <section class="datosdevivienda">
+    
+    <div class="seccionizq">
+        <h1> Titulo de la vivienda</h1>
+        <p>Casa en zona rural de Barva, con todos los servicios.</p>
+
+        <h1>Direccion de la vivienda</h1>
+        <p>La casita esta ubicada en la zona mas rural de barva. Esta localizada 2km al este, 800m al norte, calle ciega con entrada de aguja.</p>
+
+        <h1>Descripcion de la vivienda</h1>
+        <p>La casita es tipo chalet, es de 3 plantas, con las paredes en roble y el techo es color negro. tiene una enorme chimenea de ladrillos grises</p>
+    </div>
+
+    <div class="seccionder">
+        <h1>ID del Coordinador y su nombre</h1>
+        <p>John Doe y C0002</p>
+
+        <h1>ID de los roomies y sus nombres</h1>
+        <p>Finn Doe y R01</p>
+        <p>Phoebe Doe y R02</p>
+
+        <h1>Reglamento</h1>
+        <p>Amigable con comunidad LGTB+.</p>
+        <p>No se permite colocar banderas de equipos deportivos.</p>
+        <p>Prohibidas las figuras ideológicas controversiales como esvásticas.</p>
+        <p>Se aceptan mascotas.</p>
+    </div>
+
+    </section>
+
+    <section class="graficosviviendas">
+
+        <h1>Gráficos de la vivienda</h1>
+
+        <div id="piecharttareas">
+            
+            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            
+            <script type="text/javascript">
+            // Load google charts
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(drawChart);
+            
+            // Draw the chart and set the chart values
+            function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+            ['Task', 'Hours per Day'],
+            ['Tareas pendientes', 24],
+            ['Tareas terminadas', 88],
+            ['Tareas caducadas', 10],
+            ]);
+            
+            // Optional; add a title and set the width and height of the chart
+            var options = {'title':'Tareas de la vivienda', 'width':550, 'height':400};
+            
+            // Display the chart inside the <div> element with id="piechart"
+            var chart = new google.visualization.PieChart(document.getElementById('piecharttareas'));
+            chart.draw(data, options);
+            }
+            </script>
+        </div>
+
+        <div id="piechartcompras">
+                
+            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+            <script type="text/javascript">
+            // Load google charts
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(drawChart);
+
+            // Draw the chart and set the chart values
+            function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+            ['Task', 'Hours per Day'],
+            ['Listas de compra completadas', 24],
+            ['Listas de compra caducadas', 88],
+            ['Listas de compra pendientes', 10],
+            ]);
+
+            // Optional; add a title and set the width and height of the chart
+            var options = {'title':'Listas de compras de la vivienda', 'width':550, 'height':400};
+
+            // Display the chart inside the <div> element with id="piechart"
+            var chart = new google.visualization.PieChart(document.getElementById('piechartcompras'));
+            chart.draw(data, options);
+            }
+            </script>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="foot-box">
+                <h2 class="head">Roomi</h2>
+                <a class="hvr-underline-from-center" href="../Info/nosotros.html">Sobre nosotros</a>
+                <a class="hvr-underline-from-center" href="../Info/contacto.html">Contacto</a>
+                <a class="hvr-underline-from-center" href="../Info/Fall.HTML">Conoce al equipo</a>
+                <a class="hvr-underline-from-center" href="../Info/faq.HTML">FAQ</a>
+    
+                <a>Redes sociales</a>
+                <div class="social">
+                    <i href class="fab fa-facebook-square "></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-twitter-square"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <a class="copy">©2020 Roomi</a>
+            </div>
+        </div>
+    </footer>
+
+<script src="js/viviendasadmin.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+</body>
+</html>

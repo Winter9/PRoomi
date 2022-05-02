@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/perfilusuarioeditable.css">
+    <title>Perfíl</title>
+</head>
+<body>
+    <section class="mini-banner">
+        <div class="nav-bar">
+
+            <div class="nav-logo"><img src="img/Logo.png"></a>
+            </div>
+
+            <div class="nav-links" id="nav-links">
+                <ul>
+                    <a href="#"><li>Jane Doe</li></a>
+                    <i class="fas fa-user-circle"></i>
+                    <a href="../Info/index.html">Salir</a>
+                </ul>
+            </div>
+        </div>
+        <div class="mini-banner-title">
+            <h2>Perfil del <span>usuario</span></h2>
+        </div> 
+    </section>
+    
+    <main>
+        <section id="perfil">
+            <div class="datos">
+                <div style="text-align:center">
+                  <h2>Datos personales</h2>
+                </div>
+                <hr>
+                    <div class="informacionpersonal">
+                        <form action="/action_page.php">
+
+                            <div class="datosestaticos">
+                                <br>
+                                <p> ID del usuario: 1 - 2345 - 6789 </p>
+                                <br>
+                                <p> ID de la vivienda: 12345 </p>
+                                <br>
+                                <p> Estado actual: Coordinador(a)</p>
+                                <br>
+                                <i class="fas fa-user-circle"></i>
+                                <br>
+                                <br>
+                                <p>Fotografía de perfil</p>
+                                <br>
+                                <br>
+                            </div>
+
+                            <div class="datoseditables">
+                                <label for="fname">Nombre</label>
+                                <p> Jane </p>
+                                <label for="lname">Primer apellido</label>
+                                <p> Doe </p>
+                                <label for="lname">Segundo apellido</label>
+                                <p> Gellar </p>
+                                <label for="lname">Teléfono</label>
+                                <p> 2223 - 2425 </p>
+                                <label for="lname">Correo electrónico</label>
+                                <p> Janedoegellar@hotmail.com </p>
+                                <label for="lname">Contacto de emergencia</label>
+                                <p> John Doe </p>
+                                <label for="lname">Parentesco con el contacto de emergencia</label>
+                                <p> Amigo </p>
+                                <label for="lname">Teléfono de contacto de emergencia</label>
+                                <p> 2233 - 4455 </p>
+                                <label for="country">País</label>
+                                <p> Costa Rica </p>
+                                <label for="subject">Dirección</label>
+                                <p> San Joaquín, Heredia. 200m al Sur de la Plaza. Casa menta de 2 pisos. </p>
+                                <input type="submit" value="Editar" onclick="document.location='./perfildelusuario.html'">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row">
+                        <div class="informacionpersonal">
+                            <img src='./img/janedoe2.jpeg' style="width:95%">
+                        </div>
+                    </div>
+              </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="fcontainer">
+            <div class="foot-box">
+                <h2 class="head">Roomi</h2>
+                <a class="hvr-underline-from-center" href="../Info/nosotros.html">Sobre nosotros</a>
+                <a class="hvr-underline-from-center" href="../Info/contacto.html">Contacto</a>
+                <a class="hvr-underline-from-center" href="../Info/Fall.html">Conoce al equipo</a>
+                <a class="hvr-underline-from-center" href="../Info/faq.HTML">FAQ</a>
+
+                <a>Redes sociales</a>
+                <div class="social">
+                    <i href class="fab fa-facebook-square "></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-twitter-square"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <a class="copy">©2020 Roomi</a>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

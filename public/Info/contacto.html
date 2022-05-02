@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/contacto.css">
+        <title>Contacto</title>
+    
+    
+        <div class="img-container">
+            <div class="inner-container">
+                <h1>Contacto</h1>
+                <div  id="img-logo">
+                    <img src="img/Logo.png" alt="">
+        
+               </div>
+            </div>
+        
+            <div>
+                <nav>
+                    <a href="../Login/registrar.html">Regístrate</a>
+                    <a href="../Login/iniciar.html">Iniciar sesión</a>
+                </nav>
+            </div>
+          
+        </div>
+        
+    
+    </head>
+    
+    
+    
+    <body>
+       
+         <div class="form-container">
+             <div class="upper-form">
+                <h2>Envianos un mensaje</h2>
+                <h3>Pronto nos pondremos en contacto</h3>
+             </div>
+                   <section class="form-contacto">
+                <form action="">
+                 
+                 <!-- Div del nombre -->
+                 <div>
+                     <label for="txt-Nombre">Nombre Completo:</label>
+                     <input  type="text" id="txt-nombre" required placeholder="Ingrese su nombre completo">
+                 </div>
+    
+                 <!-- Div del Correo -->
+                <div>
+                    <label for="txt-correo">Correo electrónico:</label>
+                    <input  type="mail" id="txt-correo" required placeholder="Ingrese su correo">
+                </div>
+                <!-- Div del telefono -->
+                <div>
+                    <label for="txt-telefono">Teléfono:</label>
+                    <input  type="tel" id="txt-telefono" required placeholder="Ingrese su teléfono">
+                </div>
+                <!-- Div del Asunto -->
+                <div>
+                    <label for="txt-asunto">Asunto:</label>
+                    <input  type="text" id="txt-asunto" required placeholder="Referencia del comentario">
+                </div>
+                 <!-- Div del Comentario -->
+                 <div class="textarea-container">
+                     <label for="txt-comentario">Comentario:</label>
+                     <textarea id="txt-comentarios" required></textarea>
+                 </div>
+    
+                 <div class="bn" >
+                     <button type="button" id="btn-done">Enviar</button>
+                 </div>
+                
+                </form>
+            </section>
+    
+         </div>   
+         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+         <script src="./js/contacto.js"> </script>    
+    </body>
+    
+    <footer>
+    
+        <nav>
+            <a href="">Roomi</a>
+            <a href="./nosotros.html">Sobre nosotros</a>
+            <a href="./contacto.html">Contacto</a>
+            <a href="./Fall.html">Conoce al equipo</a>
+            <a href="./faq.HTML">FAQ</a>
+            <a href="">Redes Sociales</a>
+        </nav>
+    </footer>
+    
+</html>

@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    font-size: calc(0.6em + 1vw);
+    scroll-behavior: smooth;
+}
+.error-input{
+    border: 2px solid #E11444;
+}
+
+/*mini-Banner */
+
+.mini-banner{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)), url(../img/elegir-rol4.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.nav-bar{
+    display: flex;
+    padding: 10px 90px;
+
+}
+
+.nav-logo img{
+    width: 200px;
+}
+
+.nav-links{
+    flex: 1;
+
+}
+
+/*USER ICON*/
+.nav-links .dropdown .fas{
+    font-size: 1.7em;
+    color: #fff;
+}
+
+.nav-links .dropdown .fas:hover{
+    color: #FEDD00;
+    transition: 0.5s;
+}
+/*USER ICON*/
+
+.nav-links ul{
+    margin-left: 20px;
+    display: inline;
+    float: right;
+    margin-top: 35px;
+}
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    padding: 25px 20px;
+}
+
+.nav-links ul a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #FEDD00;
+    display: block;
+    margin: auto;
+    transition: .5s;
+
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+
+
+.mini-banner-title{
+    margin: 1% 23%;
+    color: #fff;
+    margin-bottom: 4rem;
+}
+
+.mini-banner-title h2{
+    font-size: 2em;
+    margin-left: 20vw;
+}
+
+
+.mini-banner-title span{
+    color: #FEDD00;
+}
+
+
+/*pp*/
+
+.dropbtn {
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #051839;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    align-content: center;
+  }
+  
+  .dropdown-content a:hover {
+      background-color: #FEDD00;
+      color: black;
+      transition: 0.5s;
+    }
+  
+  .show {display:block;}
+
+/*pp*/
+
+
+
+/*Mini-Banner end */
+
+
+/*Elige Rol*/
+.elige-rol{
+    padding: 100px;
+    text-align: center;
+    background-color: #fffbeb;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23a2d6f9' fill-opacity='0.44' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+
+}
+
+.mini-banner .head{
+    font-size: 1.8em;
+}
+
+.mini-banner .container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+
+}
+
+.mini-banner .container .elige-rol-box{
+    position: relative;
+    width: 650px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.2rem;
+    border: 1px solid black;
+    box-shadow: 0 0 16px #FEDD00;
+}
+.elige-rol-box h4{
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #fff;
+    -webkit-text-stroke-width: 1.3px;
+    -webkit-text-stroke-color: black;
+}
+
+.elige-rol-box p{
+    font-size: 0.7em;
+    color: #fff;
+    font-weight: 500;
+
+}
+
+.btn{
+    padding: 25px 45px;
+    border-radius: 0.6em;
+    border: 0;
+    background: #fff;
+    font-weight: bolder;
+    cursor: pointer;
+    font-size: 0.9em;
+
+}
+
+.elige-rol-box .btn{
+    margin-top: 2rem;
+    border-radius: 0.6rem;
+    margin-left: 7rem;
+}
+
+.bgse1{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)),url("../img/busca.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.bgse2{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)),url("../img/postula.jpg");
+    background-position: center;
+    background-size: cover;
+}
+/*Elige Rol end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer*/
+
+.footer{
+    background-color: #051839;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%23fffbeb' fill-opacity='0.4'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+
+.footer .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0 20px 0;
+
+}
+
+.footer .container .foot-box{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer .head{
+    color: #FFFBEB ;
+    font-size: 1.9em;
+    margin-bottom: 0.9rem;
+
+}
+
+.footer a{
+    color: #FFFBEB;
+    text-decoration: none;
+    font-size: 0.8em;
+    margin-bottom: 0.2rem;
+}
+
+.footer .fab{
+    font-size: 1.6em;
+    color: #FFFBEB;
+    cursor: pointer;
+}
+
+.footer .copy{
+    font-size: 0.5em;
+    margin-top: 1rem;
+}
+
+.footer .fab:hover{
+    color: #FEDD00;
+    transition: 0.6s;
+}
+
+.footer .head:hover{
+    color: #FEDD00;
+    transition: 0.6s;
+    cursor: pointer;
+}
+/*Footer end */

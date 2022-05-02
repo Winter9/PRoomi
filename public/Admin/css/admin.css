@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    font-size: calc(0.6em + 1vw);
+    font-family: 'Roboto', sans-serif;
+
+    scroll-behavior: smooth;
+}
+
+.banner{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)), url(../img/banner.jpeg);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.nav-bar{
+    display: flex;
+    padding: 10px 90px;
+}
+
+.logo img{
+    width: 200px;
+}
+
+.enlace{
+    flex: 1;
+}
+
+.enlace ul{
+    margin-left: 20px;
+    display: inline;
+    float: right;
+    margin-top: 23px;
+}
+.enlace li{
+    list-style: none;
+    display: inline-block;
+    padding: 25px 20px;
+}
+
+.enlace ul a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.enlace ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #FEDD00;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+
+.enlace ul li:hover::after{
+    width: 100%;
+}
+
+.titulo{
+    margin: 8% 38.5%;
+}
+
+.titulo h1{
+    font-size: 2.5em;
+    margin-bottom: 100px;
+    text-align: center;
+    color: #FFFBEB;
+}
+
+.imagenes .img1 {
+    background-image: url('../img/usuario.jpg');
+    background-size: cover;
+    float: left;
+    min-height: 85vh;
+    width: 50%;
+}
+.imagenes .img2 {
+    background-image: url('../img/viviendas.jpg');
+    background-size: cover;
+    float: left;
+    min-height: 85vh;
+    width: 50%;
+}
+.imagenes h1{
+    font-size: 2em;
+    margin-top: 10%;
+    color: #FFFBEB;
+}
+
+/*
+    inicio Tablas
+*/
+
+h1{ 
+    text-align: center;
+    font-size: 2em;
+}
+table{
+    background-color: #fff;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+td,th{
+    border: 2px solid #051839;
+    
+    padding: 15px; 
+    text-align: left;
+}
+td{
+    width: 25%;
+    height: 50px;
+}
+th{
+    background: #A2D6F9;
+    text-align: center;
+}
+
+/*
+    fin tablas
+*/
+
+
+/*Footer*/
+
+.footer{
+    background-color: #051839;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%23fffbeb' fill-opacity='0.4'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+
+.footer .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding: 35px 0 35px 0;
+
+}
+
+.footer .container .foot-box{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer .head{
+    color: #FFFBEB ;
+    font-size: 1.9em;
+    margin-bottom: 0.9rem;
+
+}
+
+.footer a{
+    color: #FFFBEB;
+    text-decoration: none;
+    font-size: 0.8em;
+    margin-bottom: 0.2rem;
+}
+
+.footer .fab{
+    font-size: 1.6em;
+    color: #FFFBEB;
+    cursor: pointer;
+}
+
+.footer .copy{
+    font-size: 0.5em;
+    margin-top: 1rem;
+}
+
+.footer .fab:hover{
+    color: #FEDD00;
+    transition: 0.6s;
+}
+
+.footer .head:hover{
+    color: #FEDD00;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+
+@media (max-width:1000px){
+    .footer .head{
+        font-size: 2.3em;
+    
+    }
+    .footer a{
+        font-size: 1.1em;
+        margin-bottom: 0.3rem;
+    }
+    
+    .footer .fab{
+        font-size: 2.2em;
+        color: #FFFBEB;
+        cursor: pointer;
+    }
+    
+    .footer .copy{
+        font-size: 0.8em;
+        margin-top: 1rem;
+    }
+
+
+}
+
+@media (max-width:500px){
+    .footer .head{
+        font-size: 2.8em;
+    
+    }
+    .footer a{
+        font-size: 1.3em;
+        margin-bottom: 0.3rem;
+    }
+    
+    .footer .fab{
+        font-size: 2.6em;
+        color: #FFFBEB;
+        cursor: pointer;
+    }
+    
+    .footer .copy{
+        font-size: 0.9em;
+        margin-top: 1rem;
+    }
+
+
+}
+
+/*Footer end */

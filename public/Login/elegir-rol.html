@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Elegir Rol</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/elegir-rol.css">
+</head>
+<body>
+    <section class="mini-banner">
+        <div class="nav-bar">
+
+            <div class="nav-logo">
+                <img src="img/logo.png" alt="#">
+            </div>
+
+            <div class="nav-links" id="nav-links">
+                <ul>
+                    <a href="#"><li>Usuario</li></a>
+                    <div class="dropdown">
+                        <a onclick="myFunction();"><i class="fas fa-user-circle dropbtn"></i></a>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="../Usuario/perfilusuarioeditable.html">Mi perfíl</a>
+                          <a href="#">Mi vivienda</a>
+                          <a href="../Info/index.html">Salir</a>
+                        </div>
+                    </div>
+
+                    <!-- <a href="#"><li>Usuario</li></a>
+                    <a href="#"><i class="fas fa-user-circle"></i></a> -->
+                </ul>
+            </div>
+        </div>
+        <div class="mini-banner-title">
+            <h2>Elige tu <span>rol</span></h2>
+        </div> 
+
+
+        <div class="container">
+            <div class="elige-rol-box bgse1 hvr-grow-shadow">
+                <div>
+                    <h4>Sé un usuario regular y busca vivienda</h4>
+                    <button type="button" class="btn hvr-radial-out" onclick="document.location ='../Vivienda/viviendas.html'">Elegir</button>
+
+                </div>
+            </div>
+            <div class="elige-rol-box bgse2 hvr-grow-shadow">
+                <div>
+                    <h4>Sé coordinador y postula tu vivienda</h4>
+                    <button type="button" class="btn hvr-radial-out" onclick="document.location ='../Vivienda/registrar-vivienda.html'">Elegir</button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<script src="js/menu.js"></script>
+</body>
+
+<footer class="footer">
+    <div class="container">
+        <div class="foot-box">
+            <h2 class="head">Roomi</h2>
+            <a class="hvr-underline-from-center" href="../Info/nosotros.html">Sobre nosotros</a>
+            <a class="hvr-underline-from-center" href="../Info/contacto.html">Contacto</a>
+            <a class="hvr-underline-from-center" href="../Info/Fall.HTML">Conoce al equipo</a>
+            <a class="hvr-underline-from-center" href="../Info/faq.HTML">FAQ</a>
+
+            <a>Redes Sociales</a>
+            <div class="social">
+                <i class="fab fa-facebook-square "></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+            <a class="copy">©2020 Roomi</a>
+        </div>
+
+    </div>
+
+</footer>
+</html>
